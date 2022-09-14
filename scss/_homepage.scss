@@ -8,7 +8,7 @@ body {
   font-family: var(--font-body);
 
   @media screen and (min-width: 768px) {
-    //max-height: 100vh;
+    max-height: 100vh;
     padding: 6rem;
   }
   @media screen and (min-width: 376px) {
@@ -88,30 +88,45 @@ body {
 
 .icon {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+
   &--white {
     color: white;
   }
+
   &:visited {
     text-decoration: none;
   }
-}
-
-.icon-container {
-  padding: 0.5rem;
-  height: 3.5rem;
-  width: 3.5rem;
-  text-align: center;
-  border: 1px solid white;
-  border-radius: 100%;
 
   &:hover {
     cursor: pointer;
     border: 1px solid var(--magenta);
-    .icon {
-      color: var(--magenta);
-    }
+    color: var(--magenta);
   }
 }
+
+// .icon-container {
+//   padding: 0.5rem;
+//   height: 3.5rem;
+//   width: 3.5rem;
+//   border: 1px solid white;
+//   border-radius: 50%;
+
+//   &:hover {
+//     cursor: pointer;
+//     border: 1px solid var(--magenta);
+//     .icon {
+//       color: var(--magenta);
+//     }
+//   }
+// }
 
 .footer {
   margin: 5rem auto 1rem;
