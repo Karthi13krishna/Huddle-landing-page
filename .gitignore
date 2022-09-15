@@ -1,2 +1,5 @@
 style-guide.md
 huddle.pur
+node_modules
+.cache
+dist
